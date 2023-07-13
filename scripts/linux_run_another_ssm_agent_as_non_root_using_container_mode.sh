@@ -1,7 +1,7 @@
 mkdir /tmp/ssm_pg # A workdir where we place files we need
 cd /tmp/ssm_pg
 mkdir -p binds/varlib # A folder which will override /var/lib/amazon/ssm/ on the new namespace
-mkdir -p binds/logs # A folder to override /var/log/amazon/ssm, we can also change this via overriding the config file to make it log to another directory
+mkdir -p binds/logs # A folder to override /var/log/amazon/ssm
 mkdir -p binds/conf # A folder which will override /etc/amazon/ssm on the new namespace
 
 cp -r /etc/amazon/ssm/* ./binds/conf/

@@ -32,7 +32,7 @@ unshare -rm
 
 mount --bind /tmp/ssm_pg/binds/varlib /var/lib/amazon/ssm # Bind over the existing VM
 mount --bind /tmp/ssm_pg/binds/logs /var/log/amazon/ssm # Bind over log directory
-mount --bind /tmp/ssm_pg/binds/conf /etc/amazon/ssm
+mount --bind /tmp/ssm_pg/binds/conf /etc/amazon/ssm # Bind over configuration directory
 
 # Register for the new account
 export ACC_CODE="<ACTIVATION_CODE>"
